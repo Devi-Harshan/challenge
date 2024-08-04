@@ -1,0 +1,13 @@
+<div>Parent Component</div>
+<app-child-component
+  (childEvent)="receiveMessage($event)"
+></app-child-component>
+<div>Parent Component</div>
+<app-child-second
+  [data]="data"
+  (childEvent)="receiveSecond($event)"
+></app-child-second>
+<div>Parent Component</div>
+<div *ngFor="let d of data2">
+  {{ d.name }}
+</div>
